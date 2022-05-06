@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@types/node": "14",
-    "ava": "^2.2.0",
+    "ava": "^4.2.0",
     "pkg": "^4.4.0",
     "rimraf": "^2.6.3",
     "ts-node": "^8.3.0",
