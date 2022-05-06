@@ -19,9 +19,10 @@
   "scripts": {
     "dev": "ts-node ./src/cli.ts",
     "clean": "rm -rf ./dist/ ./exec/",
-    "build": "npm run clean && tsc",
-    "test": "npm run build && ava --verbose",
-    "bundle": "npm run build && pkg . --out-dir ./exec/"
+    "lint": "eslint . --ext .ts",
+    "test": "yarn lint && yarn build && ava --verbose",
+    "build": "yarn clean && tsc",
+    "bundle": "yarn build && pkg . --out-dir ./exec/"
   },
   "devDependencies": {
     "@types/node": "14",
